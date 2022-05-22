@@ -10,17 +10,17 @@ pipeline{
     }
     stage('install'){
       steps{
-        bat " install -f employee"
+        bat mvn install -f employee
       }
     }
     stage('test'){
       steps{
-        bat " test -f employee"
+        bat mvn test -f employee
       }
     }
     stage('package'){
       steps{
-        bat " package -f employee"
+        bat mvn package -f employee
       }
     }
   }
