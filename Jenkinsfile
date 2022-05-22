@@ -5,7 +5,7 @@ pipeline{
       steps{
         bat " rmdir /s /q employee"
         bat "git clone https://github.com/hakamaru/employee.git"
-        bat " MAVEN clean -f employee"
+        
       }
     }
     stage('install'){
