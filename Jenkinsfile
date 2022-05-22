@@ -10,17 +10,17 @@ pipeline{
     }
     stage('install'){
       steps{
-        bat "mvn install -f employee"
+        //bat "mvn install -f employee"
       }
     }
     stage('test'){
       steps{
-        bat "mvn test -f employee"
+       // bat "mvn test -f employee"
       }
     }
     stage('package'){
       steps{
-        bat "mvn package -f employee"
+        //bat "mvn package -f employee"
       }
     }
   }
