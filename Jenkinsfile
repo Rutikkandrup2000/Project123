@@ -5,22 +5,22 @@ pipeline{
       steps{
         
         bat "git clone https://github.com/hakamaru/employee.git"
-        bat "maven clean -f employee"
+        bat "mvn clean -f employee"
       }
     }
     stage('install'){
       steps{
-        bat "maven install -f employee"
+        bat "mvn install -f employee"
       }
     }
     stage('test'){
       steps{
-        bat "maven test -f employee"
+        bat "mvn test -f employee"
       }
     }
     stage('package'){
       steps{
-        bat "maven package -f employee"
+        bat "mvn package -f employee"
       }
     }
   }
