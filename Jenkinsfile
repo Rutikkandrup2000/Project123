@@ -5,6 +5,7 @@ pipeline{
       steps{
         bat "rmdir /s /q employee"
         bat "git clone https://github.com/hakamaru/employee.git"
+        bat "cd employee"
         bat "mvn clean -f employee"
       }
     }
