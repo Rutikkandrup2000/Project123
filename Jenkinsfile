@@ -5,7 +5,6 @@ pipeline{
       steps{
         
         bat "git clone https://github.com/hakamaru/employee.git"
-        bat "cd employee"
         bat "mvn clean -f employee"
       }
     }
