@@ -10,17 +10,17 @@ pipeline{
     }
     stage('install'){
       steps{
-        bat "MAVEN install -f employee"
+        bat 'MAVEN install -f employee'
       }
     }
     stage('test'){
       steps{
-        bat "MAVEN test -f employee"
+        bat 'MAVEN test -f employee'
       }
     }
     stage('package'){
       steps{
-        bat "MAVEN package -f employee"
+        bat 'MAVEN package -f employee'
       }
     }
   }
